@@ -21,10 +21,7 @@ class Rectangle:
         Returns:
           bool: True, якщо прямокутник квадрат, інакше False.
         """
-        if self.width == self.height:
-            return "Yes"
-        else:
-            return "No"
+        return self.width == self.height
 
     def resize(self, new_width, new_height):
         """
@@ -43,7 +40,7 @@ print("Width:", rect.width)
 print("Height:", rect.height)
 print("Area:", rect.area())
 print("Perimeter:", rect.perimeter())
-print("Is it a square?", rect.is_square())
+print("Square?", rect.is_square())
 
 rect.resize(5, 5)
 print("\nParameters have been changed")
@@ -51,7 +48,7 @@ print("New Width:", rect.width)
 print("New Height:", rect.height)
 print("New Area:", rect.area())
 print("New Perimeter:", rect.perimeter())
-print("Is it a square now?", rect.is_square())
+print("Square?", rect.is_square())
 
 
 
