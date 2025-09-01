@@ -1,6 +1,16 @@
-from math import *
+import math
+
 def calculate_circle_area(radius):
-    return (radius**2)*pi
+    """
+    Обчислює площу кола за заданим радіусом.
+
+    Args:
+        radius (float): Радіус кола.
+
+    Returns:
+         float: Площа кола.
+    """
+    return (radius ** 2) * math.pi
 
 radius = float(input("Circle radius:"))
 area = calculate_circle_area(radius)
